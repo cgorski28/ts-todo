@@ -23,28 +23,32 @@
             <div class="field">
                 <label>Type:</label>
                 <select id="type">
-                    <option value="invoice">Invoice</option>
-                    <option value="payment">Payment</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
                 </select>
             </div>
             <div class="field">
-                <label>To / From:</label>
-                <input type="text" id="tofrom">
+                <label>Title:</label>
+                <input type="text" id="title">
             </div>
             <div class="field">
                 <label>Details:</label>
                 <input type="text" id="details">
             </div>
             <div class="field">
-                <label>Amount (£):</label>
-                <input type="number" id="amount">
+                <label>Urgency</label>
+                <select id="urgency">
+                    <option value="immediate">Immediate</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                </select>
             </div>
             <button>Add</button>
         </form>
 
     </footer>
 
-    <script src='sandbox.js'></script>
+    <script type='module' src='app.js'></script>
 </body>
 
 </html>
